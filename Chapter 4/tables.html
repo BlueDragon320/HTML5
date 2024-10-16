@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables - Html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 18px;
+            text-align: left;
+        }
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            border: 2px solid black;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tables in HTML</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ChotaBheem</td>
+                <td>Saves People</td>
+                <td>100 Ladoo</td>
+            </tr>
+            <tr>
+                <td>Raju</td>
+                <td>Kalia ke dono hath</td>
+                <td>-100 Ladoo</td>
+            </tr>
+            <tr>
+                <td>Kalia</td>
+                <td>Raju ke laddo choraana</td>
+                <td>1000 Ladoo</td>
+            </tr>
+            <tr>
+                <td>Chutki</td>
+                <td>Ladoo store</td>
+                <td>1000000 Ladoo</td>
+            </tr>
+            <tr>
+                <td colspan="3">Thanks</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
