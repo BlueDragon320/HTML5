@@ -1,20 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms - HTML`</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+    
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+        }
+    
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+    
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #444;
+            color: #fff;
+        }
+    
+        select {
+            background-color: #444;
+            color: #fff;
+            border: none;
+            padding: 10px;
+        }
+    
+        option {
+            background-color: #444;
+            color: #fff;
+        }
+    
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #6200ee;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    
+        button[type="submit"]:hover {
+            background-color: #3700b3;
+        }
+    
+        div {
+            margin-bottom: 20px;
+        }
+    
+        textarea {
+            resize: none;
+        }
+    </style>
+    
 </head>
+
 <body>
     <h1>Forms in Html</h1>
     <form action="/submit.php"></form>
+
     <div>
         <label for="name">Name</label>
-        <input type="text" placeholder="Enter Namef">
+        <input type="text" placeholder="Enter Name" required>
     </div>
+
     <div>
         <label for="ph">Phone</label>
-        <input id="ph" type="tel" placeholder="Enter phone Number">
+        <input id="ph" type="tel" placeholder="Enter phone Number" required>
     </div>
+
+
+    <div>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Enter email id" required>
+    </div>
+
+    <div>
+        <label for="password">password</label>
+        <input id="password" type="password" placeholder="Enter password" required>
+    </div>
+
+    <div>
+        <label for="dob">Date of Birth</label>
+        <input id="dob" type="date" required>
+    </div>
+
+    <div>
+        <label for="gender"></label>
+        <select id="gender" type="">
+            <option value="" disabled selected>Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="Others">Others</option>
+        </select>
+    </div>
+
+    <div>
+        <p>Subscription Plans</p>
+        <input id="basic" type="radio" name="subscription" value="basic">
+        <label for="basic">Basic</label>
+
+        <input type="radio" id="premium" name="subscription" value="premium">
+        <label for="premium">premium</label>
+
+        <input type="radio" id="vip" value="vip" name="subscription">
+        <label for="vip">Vip</label>
+    </div>
+
+    <div>
+        <input id="terms" type="checkbox" required>
+        <label for="terms">I agree to the terms and conditions</label>
+    </div>
+
+    <div>
+        <label for="comments">Comments</label>
+        <textarea id="comments" placeholder="Enter your comment" rows="5"></textarea>
+    </div>
+
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+
 </body>
 </html>
